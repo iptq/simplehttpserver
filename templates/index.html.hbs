@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Directory listing for {{ name }}</title>
+    </head>
+    <body>
+        <h2>Directory listing for {{ name }}</h2>
+        <hr>
+        <ul>
+            {{#each files }}
+            <li><a href="{{ this }}">{{ this }}</a></li>
+            {{/each}}
+        </ul>
+        <hr>
+    </body>
+</html>
